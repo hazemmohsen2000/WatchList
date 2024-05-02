@@ -1,0 +1,278 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    
+}
+.container {
+   
+    max-width: 900px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    align-items: center;
+    background-image: url("./images/THJJRUhNlEc.png");
+    background-size: cover;
+    background-color: #0E0E0E;
+    color: white;
+}
+.page-title {
+    font-family: Inter;
+    font-size: 42.7947px;
+    line-height: 24px;
+    letter-spacing: -0.045em;
+}
+header .toggle-button{
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.search-form {
+    display : flex ;
+    width : 462px;
+   margin: -14px auto 0 auto ;
+}
+.search-input {
+  
+    width: 70%;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #6B7280;
+    border: 1px solid #D1D5DB;
+    border-radius: 6px 0px 0px 6px;
+    background: white url("./images/Search-Icon.png") no-repeat 5px;
+    background-size: 6%;
+    padding: 10px 3px 10px 30px;
+}
+
+.search-button {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    color : #374151;
+    width: 30%;
+    background: #F9FAFB;
+    border: 1px solid #D1D5DB;
+    border-radius: 0px 6px 6px 0px;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color: darkgray;
+}
+.search-input:active,.search-input:focus{
+outline-color: #2b2929  ;
+}
+.film-reel {
+    width: 70px;
+    margin-top: 100px;
+}
+
+.start-exploring {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #DFDDDD;
+}
+.no-results {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    color: #DFDDDD;
+    max-width: 330px;
+    margin : 100px auto 0 auto;
+}
+.recommendations {
+    display: flex;
+    max-width: 462px;
+    height: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 44px;
+    border-bottom: 1.5px solid #E5E7EB;
+    gap : 21px;
+}
+.poster {
+    height: 147px;
+    width: 99px;
+    border-radius: 3px;
+}
+.movie-info-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1px;
+    text-align: left;
+
+}
+.first-row {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    height: 18px;
+    margin-top: 18px;
+    
+}
+.title {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+   
+
+   
+}
+.star {
+    height: 15px;
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+.rating {
+    margin-left: 5px;
+}
+.second-row {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    height: 12px;
+    margin-top: 11px;
+    gap : 14px
+}
+
+.add-btn {
+    height: 16px;
+   
+    cursor: pointer;
+}
+
+.watchlist-btn {
+margin-left: -10px;
+}
+.description {
+    font-family: Inter;
+    font-size: 14px;
+    line-height: 20px;
+    color: #6B7280;
+    margin-top: 8px;
+}
+.watchlist-empty {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #DFDDDD;
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+.add-movies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #363636;
+    gap : 15px;
+}
+
+.index-link {
+    margin-top: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+    .page-title {
+        font-size: 25px;
+    }
+    
+    .toggle-button {
+        font-size: 12px;
+    }
+       
+    .search-form {
+        width: 330px;
+    }
+    
+    .search-input {
+        padding: 6px 6px 6px 30px;
+    }
+    
+    .search-button {
+        width: 30%;
+    }
+   
+    
+    .recommendations {
+        gap : 12px;
+        width: 350px;
+        padding-bottom: 20px;
+    }
+    .poster {
+        margin-left : 8px;
+        height: 130px;
+        width: 79px;
+    }
+    .first-row {
+       
+        margin-top: 0px;
+    }
+
+    .second-row {
+      
+        font-size: 11px;
+        gap : 5px;
+        margin-top: 20px;
+    }
+    
+    .genre {
+        margin-left: 14px;
+    }
+    
+    .add-btn {
+        height: 16px;
+        margin-left: 6px;
+        cursor: pointer;
+    }
+    
+    .watchlist-btn {
+        margin-left: 0px;
+    }
+    
+    .description {
+        font-size: 13px;
+        margin-top: 12px;
+        max-width: 240px;
+    }
+    .title {
+        font-size : 14px;
+        font-weight: 700;
+    }
+    
+}
+
+
